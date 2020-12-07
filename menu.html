@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Rosa</title>
+    <link rel="shortcut icon" href="images/website_icon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <input type="checkbox" name="" id="toggle">
+    <!--header start-->
+    <header class="header">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="logo">
+                    <a href="index.html">Rosa</a>
+                </div>
+                <div class="nav1">
+                    <ul>
+                        <li><a href="index.html" onmouseover="big(this)" onmouseout="small(this)">Home</a></li>
+                        <li><a href="menu.html" onmouseover="big(this)" onmouseout="small(this)">Menu</a></li>
+                        <li><a href="reservation.html" onmouseover="big(this)" onmouseout="small(this)">Reservation</a></li>
+                        <li><a href="index.html#info" onmouseover="big(this)" onmouseout="small(this)">About us</a></li>
+                        <li><a href="index.html#inf" onmouseover="big(this)" onmouseout="small(this)">Contact</a></li>
+                        <li><a href="contact.html" onmouseover="big(this)" onmouseout="small(this)">Sign in</a></li>
+                    </ul>
+                </div>
+                <div class="nav-scroll">
+                    <label for="toggle">&#9776;</label>
+                </div>
+                
+            </div>
+        </div>
+    </header>
+
+    <!-- FOOD MENU SECTION -->
+    <section class="align-items-center bg-img bg-img-fixed" id="food-menu-section"
+        style="background-image: url(images/restaurant-3.jpg);margin-top: 9vh; padding-top: 5vh; padding-bottom: 5vh;">
+        <div class="container">
+            <div class="food-menu">
+                <h1>
+                    What will <span class="primary-color">you</span> eat today?
+                </h1>
+                <p>
+                    The perfect start to a great meal begins here. <br> 
+                    Satisfy your sweet tooth with one of our desserts here or to go.  <br>
+                    Big flavor in every bite. Our entrees are as delicious as they are diverse.
+                </p>
+                <div class="food-category">
+                    <div>
+                        <button class="active" data-food-type="all">
+                            All food
+                        </button>
+                    </div>
+                    <div>
+                        <button data-food-type="salad">
+                            Salad
+                        </button>
+                    </div>
+                    <div>
+                        <button data-food-type="appetizers">
+                            Appetizers
+                        </button>
+                    </div>
+                    <div>
+                        <button data-food-type="pastas">
+                            Pastas
+                        </button>
+                    </div>
+                    <div>
+                        <button data-food-type="sandwiches">
+                            Sandwiches
+                        </button>
+                    </div>
+                </div>
+
+                <div class="food-item-wrap all">
+                    <div class="food-item salad-type">
+                        <div class="item-wrap">
+                            <div class="item-img">
+                                <div class="img-holder bg-img"
+                                    style="background-image: url(images/greek-salad.jpg);"></div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>
+                                        Greek Salad
+                                    </h3>
+                                    <span>
+                                        7$
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-item appetizers-type">
+                        <div class="item-wrap">
+                            <div class="item-img">
+                                <div class="img-holder bg-img"
+                                    style="background-image: url('images/grilled-shrimp.jpg');"></div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>
+                                        Grilled Shrimp
+                                    </h3>
+                                    <span>
+                                        20$
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-item pastas-type">
+                        <div class="item-wrap">
+                            <div class="item-img">
+                                <div class="img-holder bg-img"
+                                    style="background-image: url('images/pasta1.jpg');">
+                                </div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>
+                                        Redmoor Linguine
+                                    </h3>
+                                    <span>
+                                        12$
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-item sandwiches-type">
+                        <div class="item-wrap">
+                            <div class="item-img">
+                                <div class="img-holder bg-img"
+                                    style="background-image: url('images/sandiwches1.jpg');"></div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>
+                                        Fish Sandwich
+                                    </h3>
+                                    <span>
+                                        12$
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-item appetizers-type">
+                        <div class="item-wrap">
+                            <div class="item-img">
+                                <div class="img-holder bg-img"
+                                    style="background-image: url('images/egg rolls.jpg');"></div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>
+                                        Buffalo Egg Rolls
+                                    </h3>
+                                    <span>
+                                        12$
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-item salad-type">
+                        <div class="item-wrap">
+                            <div class="item-img">
+                                <div class="img-holder bg-img"
+                                    style="background-image: url('images/salat2.jpg');"></div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>
+                                        Caesar Salad
+                                    </h3>
+                                    <span>
+                                        7$
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-item pastas-type">
+                        <div class="item-wrap">
+                            <div class="item-img">
+                                <div class="img-holder bg-img"
+                                    style="background-image: url('images/pasta2.jpg');"></div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>
+                                        Linguine Pasta
+                                    </h3>
+                                    <span>
+                                        20$
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-item sandwiches-type">
+                        <div class="item-wrap">
+                            <div class="item-img">
+                                <div class="img-holder bg-img"
+                                    style="background-image: url('images/sandiwches2.jpg');"></div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>
+                                      Swiss Burger
+                                    </h3>
+                                    <span>
+                                        12$
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!--restaurant-info start-->
+        <section class="info text-center" id="info" style="padding: 90px 0;">
+            <div class="container">
+                <div class="section-heading my-5 text-center">
+                    <h4>Discover</h4>
+                    <h1 class="display-4" style="font-family: 'Niconne', cursive; color: #c69963;">Main Information</h1>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <div class="card-body">
+                            <svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-watch" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 14.333v-1.86A5.985 5.985 0 0 1 2 8c0-1.777.772-3.374 2-4.472V1.667C4 .747 4.746 0 5.667 0h4.666C11.253 0 12 .746 12 1.667v1.86A5.985 5.985 0 0 1 14 8a5.985 5.985 0 0 1-2 4.472v1.861c0 .92-.746 1.667-1.667 1.667H5.667C4.747 16 4 15.254 4 14.333zM13 8A5 5 0 1 0 3 8a5 5 0 0 0 10 0z"/>
+                                <path d="M13.918 8.993A.502.502 0 0 0 14.5 8.5v-1a.5.5 0 0 0-.582-.493 6.044 6.044 0 0 1 0 1.986z"/>
+                                <path fill-rule="evenodd" d="M8 4.5a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5H6a.5.5 0 0 1 0-1h1.5V5a.5.5 0 0 1 .5-.5z"/>
+                              </svg>                        
+                            <h1>Working hours</h1>
+                            <p>Mon to Fri: 9.00am - 8.00pm</p>
+                            <p>Sat to Sun: 9.00am - 11.00pm</p>
+                        </div>
+                    </div>                
+                    <div class="col-12 col-md-4">
+                        <div class="card-body">
+                            <svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-shop" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.371 2.371 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976l2.61-3.045zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0zM1.5 8.5A.5.5 0 0 1 2 9v6h1v-5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v5h6V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5zM4 15h3v-5H4v5zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-3zm3 0h-2v3h2v-3z"/>
+                            </svg>
+                            <h1>Our Location</h1>
+                            <p>112 Second Avenue</p>
+                            <p>London, En 5615</p>
+                        </div>
+                    </div>                
+                    <div class="col-12 col-md-4" >
+                        <div class="card-body">
+                            <svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-phone" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M11 1H5a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/>
+                                <path fill-rule="evenodd" d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                              </svg>
+                            <h1>Get in touch</h1>
+                            <p>Phone number: (777)-111-22-33</p>
+                            <p>Email: contact@rosa.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        </section>
+        <!--restaurant-info end-->
+
+
+
+    <script>
+        let foodMenuList = document.querySelector('.food-item-wrap');
+        let foodCategory = document.querySelector('.food-category');
+        let categories = foodCategory.querySelectorAll('button');
+
+        Array.from(categories).forEach((item, index) => {
+            item.onclick = (e) => {
+                let currCat = foodCategory.querySelector('button.active')
+                currCat.classList.remove('active')
+                e.target.classList.add('active')
+                foodMenuList.classList ='food-item-wrap '+ e.target.getAttribute('data-food-type')
+            }
+        });
+    </script>
+</body>
+</html>

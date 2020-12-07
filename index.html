@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Rosa</title>
+    <link rel="shortcut icon" href="images/website_icon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <input type="checkbox" name="" id="toggle">
+    <!--header start-->
+    <header class="header">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="logo">
+                    <a href="index.html">Rosa</a>
+                </div>
+                <div class="nav1">
+                    <ul>
+                        <li><a href="index.html" onmouseover="big(this)" onmouseout="small(this)">Home</a></li>
+                        <li><a href="menu.html" onmouseover="big(this)" onmouseout="small(this)">Menu</a></li>
+                        <li><a href="reservation.html" onmouseover="big(this)" onmouseout="small(this)">Reservation</a></li>
+                        <li><a href="index.html#info" onmouseover="big(this)" onmouseout="small(this)">About us</a></li>
+                        <li><a href="index.html#inf" onmouseover="big(this)" onmouseout="small(this)">Contact</a></li>
+                        <li><a href="contact.html" onmouseover="big(this)" onmouseout="small(this)">Sign in</a></li>
+                    </ul>
+                </div>
+                <div class="nav-scroll">
+                    <label for="toggle">&#9776;</label>
+                </div>
+                
+            </div>
+        </div>
+    </header>
+    <!--header end-->
+    <!--home section start-->
+    <section class="home-section">
+        <!--slide start-->
+        <div class="slide active" style="background-image: url('images/hero.jpg'); ">
+          <div class="container"> 
+            <div class="row1 align-items-center">
+                <div class="home-content">
+                    <p id="text1">A Crazy place for crazy foody - Heart of Perfect Food Hangout!</p>
+                    <h1 id="h1">Rosa</h1>
+                    <a href="reservation.html"><span id="book1">Book a Table</span></a>
+                </div>
+            </div>
+          </div> 
+        </div>
+        <!--slide end-->
+        <!--slide start-->
+        <div class="slide" style="background-image: url('images/slider-image3.jpg'); ">
+            <div class="container"> 
+              <div class="row1 align-items-center">
+                  <div class="home-content">
+                      <p id="text">A Crazy place for crazy foody - Heart of Perfect Food Hangout!</p>
+                      <h1 id="h">Rosa</h1>
+                      <a href="reservation.html"><span id="book">Book a Table</span></a>
+                    </div>
+              </div>
+            </div> 
+          </div>
+          <!--slide end-->
+          <!--slide start-->
+        <div class="slide" style="background-image: url('images/slider-image2.jpg'); ">
+            <div class="container"> 
+              <div class="row1 align-items-center">
+                  <div class="home-content">
+                      <p id="text">A Crazy place for crazy foody - Heart of Perfect Food Hangout!</p>
+                      <h1 id="h">Rosa</h1>
+                      <a href="reservation.html"><span id="book">Book a Table</span></a>
+                    </div>
+              </div>
+            </div> 
+          </div>
+          <!--slide end-->
+    </section>
+    <!--home section end-->
+    
+    <!--service section start-->
+    <div class="service-container" >
+       <div class="service-row"data-aos="fade-right">
+           <div class="column-66">
+               <h1>Known for service</h1>
+               <p>We are committed to provide you with an exceptional dining experience every time you walk through our door. Approved by <abbr title="World Health Organization">WHO</abbr></p>
+           </div>
+           <div class="column-33">
+               <img src="images/service.jpg" alt="">
+           </div>
+       </div> 
+    </div>
+    <div class="service-container" style="background-color:#f1f1f1" >
+        <div class="service-row"data-aos="fade-left">
+            <div class="column-33">
+                <img src="images/food.jpg" alt="">
+            </div>
+            <div class="column-66">
+                <h1>Modern Asian Dining</h1>
+				<p>We offer authentic <strong>Chinese and Asian</strong> cuisine from the different parts of China and the Far East. 
+            </div>   
+        </div> 
+     </div>
+     <div class="service-container" >
+        <div class="service-row"data-aos="fade-right">
+            <div class="column-66">
+                <h1>Check out</h1>
+				<p>Our chefs understand that the secret of good taste lies largely in the freshness of the ingredients and creating a harmionious combination of tastes.</p> 
+            </div>
+            <div class="column-33">
+                <img src="images/taste.jpg" alt="">
+            </div>
+        </div> 
+     </div>
+    <!--service section end-->
+    
+    <!--reservation section-->
+    <section class="booking menu" id="booking">
+        <div class="container">
+            <div class="row align-items-lg-center">
+                <div class="col-12 col-md-6 text-center text-md-left" data-aos="fade-right">
+                    <div class="section-heading mb-3">
+                        <h4>Make</h4>
+                        <h1 class="display-4" style="font-family: 'Niconne', cursive; color: #c69963;">The Reservation</h1>
+                    </div>
+                    <p style="color: #fff;">Please inquire about reservations at least two weeks in advance by using the form below. For reservations within the coming week, or for parties larger than four, please call us at the number listed above. We will call you to confirm your reservation at least 24 hours prior to your reservation.</p>
+                        <a href="reservation.html" class="btn mt-4 mb-5 mb-md-0" style="width: auto;">Book a Table</a>
+                </div>
+                <div class="col-12 col-md-6" data-aos="fade-left">
+                    <img src="images/rest2.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--reservation section end-->
+
+    <!--chef section start-->
+    <section class="chef text-center" id="chef">
+        <div class="container">
+            <div class="section-heading my-5 text-center">
+                <h4 style="color: black;">Meet</h4>
+                <h1 class="display-4" style="font-family: 'Niconne', cursive; color: #c69963;">Our Chefs</h1>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <img class="img-fluid" src="http://pngimg.com/uploads/chef/chef_PNG131.png" alt="" data-aos="fade-up-right" data-aos-duration="3000">
+                    <div class="card-body" data-aos="fade-up" data-aos-duration="3000">
+                        <h1>Mike Wazowski</h1>
+                        <h6>Desert Specialist</h6>
+                        <p>He received an apprenticeship at L'Oustau de Baumaniere in Provence and worked as a chef in many French restaurants and hotels in Paris.</p>
+                    </div>
+                </div>                
+                <div class="col-12 col-md-4">
+                    <img class="img-fluid" src="http://pngimg.com/uploads/chef/chef_PNG139.png" alt="" data-aos="fade-up" data-aos-duration="3000">
+                    <div class="card-body" data-aos="fade-up" data-aos-duration="3000">
+                        <h1>John Cena</h1>
+                        <h6>Meat Specialist</h6>
+                        <p>John Cena is has a passion for southwestern cuisine. He has many cooking credentials and has received many awards for his creative dishes. John is the author of several books including "John Cena's Bold American Food" and "John Cena's Grill It!".</p>
+                    </div>
+                </div>                
+                <div class="col-12 col-md-4">
+                    <img class="img-fluid" src="images/chef3.png" alt="" data-aos="fade-up-left" data-aos-duration="3000">
+                    <div class="card-body" data-aos="fade-up" data-aos-duration="3000">
+                        <h1>Jackie Chan</h1>
+                        <h6>Asian Food Specialist</h6>
+                        <p>Jackie Chan worked in Tokyo for several years after finishing his culinary studies in the Beijing. Furthermore, he became White House assistant chef, and he served President George Bush senior, Bill Clinton, and George W. Bush.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!--chef section end-->
+    <!--menu section-->
+    <section class="menu" id="menu">
+        <div class="container">
+            <div class="row align-items-lg-center">
+                <div class="col-12 col-md-6 text-center text-md-left" data-aos="fade-right">
+                    <div class="section-heading mb-3">
+                        <h4>Check</h4>
+                        <h1 class="display-4" style="font-family: 'Niconne', cursive; color: #c69963;">The Menu</h1>
+                    </div>
+                    <p style="color: #fff;">You can talk about our pizza for hours, but let's just say the main thing - the thinnest dough, the sea of filling and everything cooked in a wood-burning oven.
+                        The salads are delicious and varied. Soup is the key to a good dinner, with our soups it is guaranteed. The main courses on our menu are presented from all over the world and prepared with love ...</p>
+                        <a href="menu.html" class="btn mt-4 mb-5 mb-md-0">See Menu</a>
+                </div>
+                <div class="col-12 col-md-6" data-aos="fade-left">
+                    <img src="images/menu-sc.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--menu section end-->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <section class="information" id="inf"> 
+
+<!--Alert on Submit-->
+        <div id="popup" class="popup center">
+        <div class="icon">
+          <i class="fa fa-check"></i>
+        </div>
+        <div class="title">
+          Success!!
+        </div>
+        <div class="description" id="description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias nihil provident voluptatem nulla placeat
+        </div>
+        <div class="dismiss-btn">
+          <button id="dismiss-popup-btn">
+            Continue
+          </button>
+        </div>
+      </div>
+<!--Alert on Submit end-->
+
+        <div class="text-content">
+            <h1 class="display-4" style="font-family: 'Niconne', cursive; color: #c69963;">Get in Touch</h1>
+            <h4>If you need help just write</h4>
+        </div>
+
+        <div class="contact-in">
+            <!--adding map-->
+            <div class="contact-map" data-aos="zoom-in"
+            data-aos-delay="300">
+                <div id="map"></div>
+            </div>
+            
+
+			<div class="contact-form" data-aos="flip-right">
+				<h1>Contact Us</h1>
+			
+					<input id="contname" type="text" placeholder="Name" class="contact-form-txt" />
+					<input id="contemail" type="text" placeholder="Email" class="contact-form-txt" />
+					<textarea id="contmessage" placeholder="Message" class="contact-form-textarea"></textarea>
+					<button id="open-popup-btn" class="contact-form-btn">Submit</button>
+				
+			</div>
+		</div>
+    </section>
+
+        <!--restaurant-info start-->
+        <section class="info text-center" id="info" style="padding: 90px 0;">
+            <div class="container">
+                <div class="section-heading my-5 text-center">
+                    <h4>Discover</h4>
+                    <h1 class="display-4" style="font-family: 'Niconne', cursive; color: #c69963;">Main Information</h1>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-4" data-aos="zoom-in-up">
+                        <div class="card-body">
+                            <svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-watch" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 14.333v-1.86A5.985 5.985 0 0 1 2 8c0-1.777.772-3.374 2-4.472V1.667C4 .747 4.746 0 5.667 0h4.666C11.253 0 12 .746 12 1.667v1.86A5.985 5.985 0 0 1 14 8a5.985 5.985 0 0 1-2 4.472v1.861c0 .92-.746 1.667-1.667 1.667H5.667C4.747 16 4 15.254 4 14.333zM13 8A5 5 0 1 0 3 8a5 5 0 0 0 10 0z"/>
+                                <path d="M13.918 8.993A.502.502 0 0 0 14.5 8.5v-1a.5.5 0 0 0-.582-.493 6.044 6.044 0 0 1 0 1.986z"/>
+                                <path fill-rule="evenodd" d="M8 4.5a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5H6a.5.5 0 0 1 0-1h1.5V5a.5.5 0 0 1 .5-.5z"/>
+                              </svg>                        
+                            <h1>Working hours</h1>
+                            <p>Mon to Fri: 9.00am - 8.00pm</p>
+                            <p>Sat to Sun: 9.00am - 11.00pm</p>
+                        </div>
+                    </div>                
+                    <div class="col-12 col-md-4" data-aos="zoom-in-up">
+                        <div class="card-body">
+                            <svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-shop" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.371 2.371 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976l2.61-3.045zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0zM1.5 8.5A.5.5 0 0 1 2 9v6h1v-5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v5h6V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5zM4 15h3v-5H4v5zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-3zm3 0h-2v3h2v-3z"/>
+                            </svg>
+                            <h1>Our Location</h1>
+                            <p>112 Second Avenue</p>
+                            <p>London, En 5615</p>
+                        </div>
+                    </div>                
+                    <div class="col-12 col-md-4" data-aos="zoom-in-up">
+                        <div class="card-body">
+                            <svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-phone" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M11 1H5a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/>
+                                <path fill-rule="evenodd" d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                              </svg>
+                            <h1>Get in touch</h1>
+                            <p>Phone number: (777)-111-22-33</p>
+                            <p>Email: contact@rosa.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        </section>
+        <!--restaurant-info end-->
+
+<script async defer
+	src="https://maps.googleapis.com/maps/api/js?key=APIKEY&callback=initMap">
+</script>
+</body>
+</html>
